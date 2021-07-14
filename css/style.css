@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    
+  }
+  /*  nav bar css part */
+ *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+  }
+ 
+  .link-text:hover {
+    transition-duration: 0.3s;
+    background-color: #75afe1;
+    transform: scale(1.1);
+}
+.link-text:hover > i {
+    transition:transform ease-in-out;
+    transition-duration: 0.5s;
+    transform: translateX(10px);
+}
+/* player part css 
+
+     background-color: #2D25A0;
+*/
+
+.head-body{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient( #2D25A0, #263af0);
+    
+
+}
+
+.head-part{
+    
+    margin-top:100px;
+    
+   
+    
+}
+.head-part h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color:#ffff;
+}
+.head-part img{
+ width:40vw;
+   
+}
+
+.link-text{
+    text-decoration:none;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    font-weight: bold;
+    
+    color:white;
+    background: #E02C6D;
+ }
+.fa-arrow-right{
+    margin-left: 10px;;
+}
+
+ /* responsive for header part 
+
+*/
+@media only screen and(min-width:992px){
+    .head-part{
+     
+     
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .head-body {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 47px;
+       
+        flex-direction: column;
+      }
+      .head-part{
+          width:50%;
+          margin-left:140px;
+          margin-top: 40px;
+          
+          justify-content: center;
+         
+      }
+      .head-part h1{
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 50px;
+          color:#ffff;
+      }
+      .head-part img{
+          width: 100%;
+         
+      }
+   
+  }
+
+
+@media only screen and (max-width: 688px) {
+    .head-body {
+      grid-template-columns: 1fr;
+ 
+    }
+    .head-part{
+    
+        
+       
+    }
+    .head-part h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        color:#ffff;
+    }
+    .head-part img{
+        width: 100%;
+       
+    }
+ 
+     
+  }
+
+/* all player list css */
+
+.container {
+    background: #FFFFFF;
+    padding: 10vh 15vw;
+    
+  
+  }
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2vw;
+    grid-row-gap: 27px;
+   
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    padding:2vh 1vw;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+  }
+  .player .player-banner img {
+
+    width: 100%;
+  }
+  .player-title {
+    font-size: 28px;
+    color: #1e1e1e;
+  }
+  .player-content{
+    font-style: normal;
+    font-weight: normal;
+      font-size:16px;
+  }
+  .player-detail{
+    
+    align-items: center;
+   
+  }
+
+  /* all player css for reponsive */
+  @media only screen and (max-width: 688px) {
+    .container {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .players{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+      flex-direction: column;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .palyers{
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 50px;
+      align-content: center;
+    }
+    .player{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  
+  /* css for footer */
+
+  footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+
+.footer-content{
+font-size: 1.3rem;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-column-gap: 0.8vh;
+margin-bottom: 20px;
+  }
+.footer-iamges img{
+    margin-left: 50px;
+      width: 60%;
+      margin-bottom:20px;
+  }
